@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainstyle.css">
+  <link rel="stylesheet" href="thống kê.css">
+  <link rel="stylesheet" href="trangquantri.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Trang quản trị</title>
+</head>
+<body>
+<!--Đầu trang-->
+<secsion class="top">
+    <div class="container">
+        <div class="row">
+            <div class="top-logo">
+                <a href="./index.html"><img src="image\logo.png" alt=""></a>
+            </div>
+            <div class="top-menu-items">
+              <ul>
+                <li><a href="./trangquantri.html" style="color: black;">Sản phẩm</a></li> 
+                <li><a href="./nhanvien.html" style="color: black;">Nhân Viên</a></li> 
+                <li><a href="./hoadonnhap.html" style="color: black;">Hóa đơn nhập</a></li>
+                <li><a href="./hoadonban.html" style="color: black;">Hóa đơn bán</a></li>
+                <li><a href="./nhacc.html" style="color: black;">Nhà cung cấp</a></li>
+                <li><a href="thongke.html" style="color: black;">Thống kê</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</secsion>
+
+    <!--Main body-->
+  
+    <section class="QLFigure">
+      <section class="Left">
+        <h3>Thêm Nhà Cung Cấp</h3>
+        <div class="Add">
+          <label for="MaF">Mã HDN:</label><br>
+          <input type="text" id="MaFigure" placeholder="Nhập mã NCC...">
+        </div>
+
+        <div class="Add">
+          <label for="TenF">Tên Sản Phẩm:</label><br>
+          <input type="text" id="TenFigure" placeholder="Nhập tên sản phẩm...">
+        </div>
+
+        <div class="Add">
+          <label for="LoaiF">Loại Sản Phẩm:</label><br>
+          <select id="LoaiFigure">
+              <option value="Mũ Nam">Mũ Nam</option>
+              <option value="Mũ Nữ">Mũ Nữ</option>
+              <option value="Mũ trẻ em">Mũ trẻ em</option>
+              <option value="Phụ kiện khác">Phụ kiện khác</option>
+          </select>
+        </div>
+
+        <div class="Add">
+          <label for="NCC">Nhà Cung Cấp:</label><br>
+          <select id="NhaCungCap">
+            <option value="Trung Quốc">Trung Quốc</option>
+              <option value="Châu Âu">Châu Âu</option>
+              <option value="Việt Nam">Việt Nam</option>
+
+          </select>
+        </div>
+
+        <div class="Add">
+            <label for="TT">Tình Trạng:</label><br>
+          <select id="TinhTrang">
+              <option value="Đặt trước">Đặt trước</option>
+              <option value="Có sẵn">Có sẵn</option>
+          </select>
+        </div>
+
+        <div class="Add">
+          <label for="Gia">Đơn Giá:</label><br>
+          <input type="text" id="DonGia" placeholder="Nhập đơn giá...">
+        </div>
+
+        <div class="Add">
+          <label for="MT">Mô Tả:</label><br>
+          <textarea id="MoTa" placeholder="Nhập mô tả..."></textarea>
+        </div>
+
+        <div class="Add">
+          <label for="image">Ảnh:</label><br>
+          <input type="file" id="image">
+        </div>
+        <div class="BtnAdd">
+          <button onclick="addFigure()">Thêm NCC</button>
+        </div>
+      </section>
+
+
+      <section class="Right">
+        <h3>Danh sách NCC</h3>
+        <div class="BtnDelete">
+          <button onclick="deleteSelectedFigures()">Xóa NCC</button>
+        </div>
+        <table id="DanhSach">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Mã</th>
+                    <th>Tên</th>
+                    <th>Loại</th>
+                    <th>Nhà Cung Cấp</th>
+                    <th>Tình Trạng</th>
+                    <th>Đơn Giá</th>
+                    <th>Mô Tả</th>
+                    <th>Ảnh</th>
+                </tr>
+            </thead>
+            <tbody id="figure-list"></tbody>
+        </table>
+      </section>
+    </section>
+
+    <!--Footer-->
+    <div class="Footerbottom">
+  </div>
+    <!--Js-->    
+    <script src="./trangquantri.js"></script>
+</body>
+</html>
+<!---------------------------------------footer-->
+</section> 
+<footer class="footer">
+    <div class="footer-left">
+        <h3>Tải ứng dụng ZERDIO</h3>
+        <div class="credit-cards">
+            <img src="image\appstore.jpg" alt="">
+            <img src="image\chplay.jpg" alt="">
+            <img src="img/paypal.png" alt="">
+        </div>
+        <p class="footer-copyright">2023-2024</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>VIỆT NAM</span> ZERDIO </p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>19001900</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">abc@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-about">
+            <span>Tổng đài hỗ trợ</span>
+            Tổng đài hỗ trợ (Miễn phí gọi)<br>
+
+            Gọi mua: 1800.1061 (7:30 - 22:00)<br>
+
+            Kỹ thuật: 1800.1764 (7:30 - 22:00)<br>
+
+            Khiếu nại: 1800.1063 (8:00 - 21:30)<br>
+
+            Bảo hành: 1800.1065 (8:00 - 21:00)
+        </p>
+
+        <div class="footer-media">
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>  
+</footer>
+<div class="footer-bottom">
+    Bản quyền thuộc về ZERDIO
+</div>
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Login.css">
+  <link rel="stylesheet" href="./mainstyle.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <!--MainBody-->
+  <div class="login-container">
+    <h1>Đăng Nhập</h1><br>
+    <form id="login-form">
+        <div class="TaiKhoan">
+            <label for="username">Tài khoản:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="MatKhau">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="TaoTaiKhoan">
+            <p>Bạn chưa có tài khoản? &nbsp;
+            <a href="./DangKi.html">Đăng ký ngay</a></p><br>
+        </div>
+        
+            <button type="button" onclick="login()">Đăng nhập</button>
+    </form>
+</div>
+  <script src="Login.js"></script>
+</body>
+</html>

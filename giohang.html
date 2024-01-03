@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=deice-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./giohang.css">
+    <script src="./giohang.js"></script>
+    <script src="./cookie.js"></script>
+
+    <title>ZERDIO</title>
+</head>
+
+<body>
+    <secsion class="top">
+        <div class="container">
+            <div class="row">
+                <div class="top-logo">
+                    <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+                </div>
+                <div class="top-menu-items">
+                    <ul>
+                        <li>Trang Chủ
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="./DangKi.html">Đăng kí</a>
+                                </li>
+                                <li>
+                                    <a href="./Login.html">Đăng nhập</a>
+                                </li>
+                                <li>
+                                    <a href="./index.html">Trang chủ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Mũ nam
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="./category.html"> Mũ lưỡi chai</a>
+                                </li>
+
+                                <li>
+                                    <a href="./category2.html">Mũ Snapback</a>
+                                </li>
+                                <li>
+                                    <a href="./category3.html">Mũ Bucket</a>
+                                </li>
+                                <li>
+                                    <a href="./category4.html">Mũ nồi</a>
+                                </li>
+                                <li>
+                                    <a href="./category15.html">Mũ len</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Mũ nữ
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="category5.html">Mũ lưỡi chai</a>
+                                </li>
+                                <li>
+                                    <a href="./category6.html">Mũ Bucket</a>
+                                </li>
+                                <li>
+                                    <a href="./category7.html">Mũ len nữ</a>
+                                </li>
+                                <li>
+                                    <a href="./category8.html">Mũ nồi nữ</a>
+                                </li>
+                                <li>
+                                    <a href="./category16.html">Mũ phớt nữ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Mũ trẻ em
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="./category9.html">Mũ lưỡi chai trẻ em</a>
+                                </li>
+                                <li>
+                                    <a href="./category10.html">Mũ len trẻ em</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Phụ kiên khác
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="./category11.html">Khăn quàng cổ nam</a>
+                                </li>
+                                <li>
+                                    <a href="./category12.html">Khăn quàng cổ nữ</a>
+                                </li>
+                                <li>
+                                    <a href="./category13.html">Khẩu trang chống nắng</a>
+                                </li>
+                                <li>
+                                    <a href="./category14.html">Bịt tai giữ ấm</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-menu-icons">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Tìm kiếm">
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li>
+                            <a href="giohang.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </secsion>
+    <!-- -----------------------SLlDER---------------------------------------------- -->
+
+    <!-----------------cart-------------------------->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-content row">
+                <div class="cart-content-left">
+                    <table class="table-prod">
+                        <thead>
+                            <tr>
+                                <th>Chọn <input type="checkbox" id="checkAll" onclick="chonTatCa()"></th>
+                                <th> &#173; </th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá tiền</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listCart">
+
+                        </tbody>
+
+
+                    </table>
+                </div>
+
+                <div class="delivery-content-left-button row">
+                    <a href="./thanhtoan.html">
+                </div>
+
+                <div class="cart-content-right">
+
+                    </table>
+                    <table>
+                        <tr>
+                            <th colspan="2">
+                                TỔNG TIỀN GIỎ HÀNG
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>TỔNG SẢN PHẨM</td>
+                            <td id="totalProducts">1</td>
+                        </tr>
+                        <tr>
+                            <td>TỔNG TIỀN HÀNG</td>
+                            <td>
+                                <p id="totalAmount">350.000<sup>đ</sup></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>TẠM TÍNH</td>
+                            <td>
+                                <p id="temporaryTotal" style="color: black;font-weight: bold;">350.000<sup>đ</sup></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-text">
+                        <p>Bạn sẽ được miễn phí khi đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p><br>
+                        <p style="color: red;font-weight: bold;">Mua đủ <span style="font-size: 18px;">2.000.000
+                                đ</span> để được miễn phí SHIP</p>
+                    </div>
+                    <div class="cart-content-right-button">
+                        <a href="./thanhtoan.html"><button>Thanh toán</button></a>
+                        <a><button onclick="deleteSp()" >Xóa sản phẩm</button></a>
+                    </div>
+                    <div class="cart-content-right-dangnhap">
+                        <p style="text-align: center;"></p> <br>
+                        <p>Hãy <a href="./Login.html">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------app-container------------------->
+
+    <!---------------footer------------------->
+    </section>
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Tải ứng dụng ZERDIO</h3>
+            <div class="credit-cards">
+                <img src="image\appstore.jpg" alt="">
+                <img src="image\chplay.jpg" alt="">
+                <img src="img/paypal.png" alt="">
+            </div>
+            <p class="footer-copyright">2023-2024</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>VIỆT NAM</span> ZERDIO </p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>19001900</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">abc@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>Tổng đài hỗ trợ</span>
+                Tổng đài hỗ trợ (Miễn phí gọi)<br>
+
+                Gọi mua: 1800.1061 (7:30 - 22:00)<br>
+
+                Kỹ thuật: 1800.1764 (7:30 - 22:00)<br>
+
+                Khiếu nại: 1800.1063 (8:00 - 21:30)<br>
+
+                Bảo hành: 1800.1065 (8:00 - 21:00)
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        Bản quyền thuộc về ZERDIO
+    </div>
+
+    <script>
+        function hienThi() {
+           
+            const listSanPham = getCookie('gioHang') ? JSON.parse(getCookie('gioHang')) : [];
+            const listCart = document.getElementById("listCart");
+            let str = ``;
+            var tongTien=0
+
+            if (isListNotEmpty(listSanPham)) {
+                listSanPham.forEach(item => {
+
+                    const newRow = document.createElement('tr');
+
+                    str += `<tr>
+                        <td><input data-Id="${item.idSanPham}" class="chonMot" type="checkbox"></td>
+                        <td><img class="imgssss" src="${item.img}" alt=""></td>
+                        <td><p>${item.name}</p></td>
+                        <td>${item.giaTien}</p></td>
+                        <td><input type="number" value="${item.soLuong}" min="1"></td>
+                        <td><p>${(item.giaTien * item.soLuong).toLocaleString() + '₫'}</p></td></tr>`
+
+                        tongTien +=item.giaTien * item.soLuong
+
+                });
+                listCart.innerHTML += str
+                document.getElementById("totalProducts").textContent = listSanPham.length;
+                document.getElementById("totalAmount").innerHTML = tongTien + "<sup>đ</sup>";
+                document.getElementById("temporaryTotal").innerHTML = tongTien + "<sup>đ</sup>";
+                console.log("ok")
+            }
+
+        }
+
+        
+        hienThi();
+        function chonTatCa() {
+            var checkAll = document.getElementById('checkAll');
+            var checkboxes = document.querySelectorAll('.chonMot');
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = checkAll.checked;
+            });
+        }
+        function deleteSp() {
+                var checkboxes = document.querySelectorAll('.chonMot');
+
+                // Duyệt qua từng checkbox
+                checkboxes.forEach(function (checkbox) {
+
+                    // In giá trị vào console (bạn có thể sử dụng giá trị này theo nhu cầu của mình)
+                    var isChecked = checkbox.checked; // Check if the checkbox is checked
+
+                    if (isChecked) {
+                        var dataId = checkbox.getAttribute('data-Id');
+                        if (xoaSanPham(dataId) == true) {
+                            var row = checkbox.closest('tr');
+                            row.parentNode.removeChild(row);
+                        } else {
+                            alert("Bị lỗi ở đâu đó");
+                        }
+                    }
+
+                    // Nếu bạn muốn sử dụng giá trị trong một hàm khác, bạn có thể truyền giá trị đó vào hàm đó
+                    // ví dụ: tenHàmKhac(dataId);
+                });
+                alert("Xóa thành công");
+            }
+    </script>
+
+
+</body>
+
+</html>
